@@ -19,9 +19,6 @@ public class Day9_JavaStaticInitializerBlock {
     }
 
     public static void main(String[] args) {
-        if (flag) {
-            int area = B * H;
-            System.out.println(area);
-        }
+        
     }
 }
