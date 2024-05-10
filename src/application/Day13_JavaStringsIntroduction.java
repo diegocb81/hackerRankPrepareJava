@@ -15,9 +15,9 @@ public class Day13_JavaStringsIntroduction {
             System.out.println("Yes");
         } else {
             System.out.println("No");
-            System.out.println(Character.toUpperCase(A.charAt(0)) + A.substring(1) + " " +
-            Character.toUpperCase(B.charAt(0)) + B.substring(1));
-            sc.close();
         }
+        System.out.println(Character.toUpperCase(A.charAt(0)) + A.substring(1) + " " +
+        Character.toUpperCase(B.charAt(0)) + B.substring(1));
+        sc.close();
     }
 }
