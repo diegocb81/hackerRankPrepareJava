@@ -36,8 +36,7 @@ public class Day56_JavaFactoryPattern {
     public static void main(String args[]){
 			Do_Not_Terminate.forbidExit();
 
-		try{
-
+		try {
 			Scanner sc = new Scanner(System.in);
 			//creating the factory
 			FoodFactory foodFactory = new FoodFactory();
@@ -49,12 +48,10 @@ public class Day56_JavaFactoryPattern {
 			System.out.println("The factory returned "+food.getClass());
 			System.out.println(food.getType());
             sc.close();
-		}
-		catch (Do_Not_Terminate.ExitTrappedException e) {
+			} catch (Do_Not_Terminate.ExitTrappedException e) {
 			System.out.println("Unsuccessful Termination!!");
-		}
-	 }
-
+		    }
+	}
 }
 
 class Do_Not_Terminate {
@@ -63,6 +60,7 @@ class Do_Not_Terminate {
         private static final long serialVersionUID = 1L;
 	}
 	 
+	@SuppressWarnings("removal")
 	public static void forbidExit() {
         final SecurityManager securityManager = new SecurityManager() {
             @Override
