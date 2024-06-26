@@ -129,7 +129,7 @@ class FancyVisitor extends TreeVis {
     }
 }
 
-public class Java58_JavaVisitorPattern {
+public class Day58_JavaVisitorPattern {
     private static int [] values;
     private static Color [] colors;
     private static HashMap<Integer, HashSet<Integer>> map;
